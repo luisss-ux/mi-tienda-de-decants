@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Decants Premium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .perfume {
+            background: white;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .perfume:hover {
+            transform: scale(1.05);
+        }
+
+        .perfume img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        select, button {
+            margin-top: 10px;
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #111;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #111;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>Decants Premium</header>
+
+<div class="catalogo">
+    <div class="perfume">
+        <img src="lebeau.jpg" alt="Le Beau">
+        <h2>Jean Paul Gaultier Le Beau</h2>
+        <p>Fresco, dulce y tropical.</p>
+        <select>
+            <option>3ml - 5€</option>
+            <option>5ml - 8€</option>
+        </select>
+        <button onclick="alert('Pedido realizado! Te contactaremos pronto.')">Pedir</button>
+    </div>
+
+    <div class="perfume">
+        <img src="spicebomb.jpg" alt="Spicebomb Extreme">
+        <h2>Spicebomb Extreme</h2>
+        <p>Intenso, especiado y potente.</p>
+        <select>
+            <option>3ml - 6€</option>
+            <option>5ml - 9€</option>
+        </select>
+        <button onclick="alert('Pedido realizado! Te contactaremos pronto.')">Pedir</button>
+    </div>
+
+    <div class="perfume">
+        <img src="borninroma.jpg" alt="Valentino Born in Roma">
+        <h2>Valentino Born in Roma</h2>
+        <p>Elegante y moderno.</p>
+        <select>
+            <option>3ml - 5€</option>
+            <option>5ml - 8€</option>
+        </select>
+        <button onclick="alert('Pedido realizado! Te contactaremos pronto.')">Pedir</button>
+    </div>
+</div>
+
+<footer>© 2026 Luis - Decants Premium</footer>
+
+</body>
+</html>
